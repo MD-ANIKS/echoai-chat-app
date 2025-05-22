@@ -1,12 +1,88 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# EchoAi 🧠💬
 
-Currently, two official plugins are available:
+A modern React-based AI chatbot powered by **Google's Gemini API**, styled with **Tailwind CSS**, and enhanced using **Lucide icons**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✨ Beautiful, responsive UI with Tailwind CSS
+- 💬 Dynamic chat interface with user and AI messages
+- ⚡ Instant responses via Gemini 2.0 Flash model
+- 🎯 Typing indicator and error handling
+- 🧹 Clear conversation history
+- 🔒 Uses `axios` for API calls
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Preview
+
+![EchoAi Chat UI Preview](preview-image-url)
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Tailwind CSS**
+- **Axios**
+- **Lucide Icons**
+- **Google Gemini API (v1beta)**
+
+---
+
+## ⚙️ Setup & Installation
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/your-username/echoai-chat-app.git
+cd echoai-chat-app
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the app
+npm run dev
+```
+
+> 💡 Make sure you replace `YOUR_API_KEY` inside the Gemini API call with your actual Google API key.
+
+---
+
+## 🔑 API Configuration
+
+Go to `App.js` and update this line with your API key:
+
+```js
+apiUrl: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_API_KEY"
+url: `${apiUrl}:generateContent?key=${apiKey}`,
+```
+
+---
+
+## 📂 Project Structure
+
+```
+echoai-chat-app/
+│
+├── public/              # Static files
+├── src/
+│   ├── App.js           # Main chat interface
+│   └── index.js         # Entry point
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 🙌 Acknowledgements
+
+- [Google Gemini API](https://ai.google.dev/)
+- [Lucide Icons](https://lucide.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
