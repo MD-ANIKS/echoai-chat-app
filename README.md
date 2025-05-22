@@ -16,7 +16,7 @@ A modern React-based AI chatbot powered by **Google's Gemini API**, styled with 
 
 ## 📸 Preview
 
-![EchoAi Chat UI Preview](preview-image-url)
+![EchoAi Chat UI Preview](preview.png)
 
 ---
 
@@ -41,7 +41,7 @@ cd echoai-chat-app
 npm install
 
 # 3. Run the app
-npm run dev
+npm run dev 
 ```
 
 > 💡 Make sure you replace `YOUR_API_KEY` inside the Gemini API call with your actual Google API key.
