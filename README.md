@@ -86,3 +86,4 @@ MIT License
 - [Google Gemini API](https://ai.google.dev/)
 - [Lucide Icons](https://lucide.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
+
